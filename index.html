@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #fff;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #cbd5e1;
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #020617;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Contact Card */
+        .card h2 {
+            margin-bottom: 20px;
+        }
+
+        .info {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            color: #e5e7eb;
+        }
+
+        .info span {
+            font-size: 1.2rem;
+        }
+
+        .hours {
+            margin-top: 20px;
+        }
+
+        .hours p {
+            color: #cbd5e1;
+            margin-top: 5px;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            background: #2563eb;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .buttons a:hover {
+            background: #1d4ed8;
+        }
+
+        /* Map */
+        .map-wrapper {
+            width: 100%;
+            height: 350px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Find Us</h1>
+        <p>We're here to help you reach us easily.</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content">
+            <!-- Contact Info -->
+            <div class="card">
+                <h2>Your Business Name</h2>
+
+                <div class="info">
+                    📍 <p>1234 Main Street, Chennai, Tamil Nadu 600003</p>
+                </div>
+
+                <div class="info">
+                    📞 <p>+91 98765 43210</p>
+                </div>
+
+                <div class="info">
+                    ✉️ <p>info@example.com</p>
+                </div>
+
+                <div class="hours">
+                    <strong>Working Hours</strong>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday: 10:00 AM - 2:00 PM</p>
+                </div>
+
+                <div class="buttons">
+                    <a href="tel:+919876543210">Call Now</a>
+                    <a href="https://www.google.com/maps" target="_blank">Get Directions</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.560960146646!2d80.270718!3d13.082680!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265f1a2f9c15b%3A0x3b7b8b9c16c7bfa!2sChennai%20Central!5e0!3m2!1sen!2sin!4v1700000000000">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy;; 2026 Your Company Name
+    </footer>
+
+</body>
+</html>
